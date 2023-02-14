@@ -4,18 +4,30 @@ body{
 main{
     display: inline-block;
     width: 100%;
-    background-color: rgb(49, 29, 87);
     text-align: center;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+.bg{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 2000px;
+    background: rgb(59,61,89);
+    background: radial-gradient(circle
+    , rgba(59, 61, 89, 0.8) 0%, rgb(21, 22, 42) 150%);
+    background-size: 100%;
 }
 img{
     float: top;
     width: 60%;
+    user-select: none;
 }
 h1{
     color: rgb(255, 123, 0);
-    font-size: 800%;
+    font-size: 10vw;
     font-weight: normal;
 }
 p,
@@ -23,10 +35,10 @@ h1{
     margin: 0;
 }
 p:first-of-type{
-    font-size: 300%;
+    font-size: 4vw;
 }
 p:last-of-type{
-    font-size: 150%;
+    font-size: 2vw;
     margin-bottom: 10%;
 }
 time{
